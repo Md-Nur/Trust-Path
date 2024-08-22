@@ -1,18 +1,29 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const WhyChoose = () => {
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl max-w-6xl mx-auto px-2 md:px-0 my-24">
-      <figure>
+      <motion.figure
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         <Image
           height={500}
           width={500}
           src="https://img.freepik.com/free-vector/job-interview-conversation_74855-7566.jpg"
           alt="Album"
         />
-      </figure>
-      <div className="card-body">
+      </motion.figure>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        className="card-body"
+      >
         <h2 className="text-4xl font-bold text-center mb-5">
           WHY CHOOSE TPAAS?
         </h2>
@@ -27,7 +38,7 @@ const WhyChoose = () => {
             Contact Us
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

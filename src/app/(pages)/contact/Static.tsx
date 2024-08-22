@@ -14,8 +14,7 @@ const Static = () => {
       <Social />
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d233639.3804636671!2d90.42366200000001!3d23.796709!3m2!1i1024!2i768!4f13.1!2m1!1sProgati%20Sharani%2C%20Dhaka%E2%80%931212!5e0!3m2!1sen!2sus!4v1724085512011!5m2!1sen!2sus"
-        width="600"
-        height="450"
+        className="w-full h-72 rounded-xl shadow-xl"
         // style="border:0;"
         // allowfullscreen={true}
         loading="lazy"

@@ -1,6 +1,8 @@
+"use client"
 import Link from "next/link";
 import { FaList, FaWeight } from "react-icons/fa";
 import { MdChat, MdGraphicEq } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -37,7 +39,8 @@ const ServicesCards = () => {
   return (
     <div className="flex flex-wrap justify-around max-w-7xl gap-2 mx-auto mb-20">
       {data.map((service, index) => (
-        <div
+        <motion.div
+          whileHover={{ scale: 1.05 }}
           key={index}
           className="card bg-base-300 w-72 shadow-xl hover:bg-secondary hover:text-secondary-content"
         >
@@ -55,7 +58,7 @@ const ServicesCards = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
