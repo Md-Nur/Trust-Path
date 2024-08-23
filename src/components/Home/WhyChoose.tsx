@@ -7,8 +7,8 @@ const WhyChoose = () => {
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl max-w-6xl mx-auto px-2 md:px-0 my-24">
       <motion.figure
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
         <Image
@@ -19,8 +19,8 @@ const WhyChoose = () => {
         />
       </motion.figure>
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
         className="card-body"
       >

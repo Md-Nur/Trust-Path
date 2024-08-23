@@ -19,12 +19,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} bg-gradient-to-tl from-base-100 via-base-300 to-neutral bg-fixed bg-cover`}
-      >
+      <body className={inter.className}>
         <GlobalProvider>
           <Nav />
           {children}
